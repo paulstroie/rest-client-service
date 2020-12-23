@@ -14,8 +14,6 @@ mvn clean install -Pswarm
 
 docker build --build-arg PORT=9076 --build-arg JAR_FILE=rest-client-service-1.0.jar -t rest-client-service:1.0 -f docker/Dockerfile .
 
-docker network create -d bridge --scope=swarm network-data-share
-
 docker stack deploy -c docker/docker-compose.yml micro
 
 http://localhost:9076/api/v1/health
