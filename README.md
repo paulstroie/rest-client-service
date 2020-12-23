@@ -18,10 +18,7 @@ docker network create -d bridge --scope=swarm network-data-share
 
 docker stack deploy -c docker/docker-compose.yml micro
 
-http://localhost:9094/api/v1/health
+http://localhost:9076/api/v1/health
 
-http://localhost:9094/swagger-ui.html#/
+http://localhost:9076/swagger-ui.html#/
 
-Hazelcast manager should be connected to one node host IP
-
-http://localhost:8094/manage-clusters
