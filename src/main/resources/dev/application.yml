@@ -1,0 +1,17 @@
+server:
+  nodeId: ${hostname:1}
+  port: 9075
+  accessControlAllowOrigin:
+  ssl:
+    enabled: false
+    key-store:
+    key-store-password:
+
+healthcheck:
+  maxHeapUsage: 0.8
+  minDiskFreeSpace: 2147483648
+
+data:
+  lake:
+    name: test
+    url: http://localhost:9095
