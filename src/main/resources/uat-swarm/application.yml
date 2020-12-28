@@ -13,5 +13,5 @@ healthcheck:
 
 data:
   lake:
-    name: test
-    url: http://localhost:9094
+    name: distributed-data-service
+    url: http://distributed-data-service:9094
