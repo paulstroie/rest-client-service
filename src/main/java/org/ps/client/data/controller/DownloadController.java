@@ -17,7 +17,7 @@ public class DownloadController {
     private RestClientService restClientService;
 
     @GetMapping(value = "/load/{map}/{key}")
-    public String createRide(@PathVariable DataTypes map, @PathVariable String key){
+    public String downloadData(@PathVariable DataTypes map, @PathVariable String key){
         return restClientService.getData(map, key);
     }
 }
