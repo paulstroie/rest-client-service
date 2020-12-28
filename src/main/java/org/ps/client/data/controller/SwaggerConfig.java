@@ -28,8 +28,8 @@ public class SwaggerConfig implements WebMvcConfigurer {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Swagger interface")
-                .description("API Interface Test")
+                .title("Rest Client Service")
+                .description("API Interface")
                 .license("License Version 1.0")
                 .version("1.0").build();
     }
